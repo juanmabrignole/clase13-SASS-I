@@ -1,0 +1,68 @@
+@import "_variables";
+@import "_tipografias";
+
+body{
+    background-color: green;
+}
+
+h1{
+    font-family: $font-encabezado;
+    color: $color-encabezados;
+    font-size: $size-encabezados;
+}
+
+//Nesting o Anidacion
+.topnav{
+    margin-top: 20px;
+    padding: 20px;
+    height: 40px;
+    background-color: $color-nav;
+    text-align: center;
+    a{
+        font-size: $size-a;
+        padding: 20px 20px;
+        color: $color-a;
+//Variable Local
+        &:hover{
+            $size-hover: 40px;
+            font-size: $size-hover;
+        }
+    }
+}
+
+.miestilo{
+    h1{
+        text-align: center;
+        font-family: $font-encabezado;
+        font-size: $size-encabezados;
+    }
+    .caja{
+        width: $width-caja;
+        height: $height-caja;
+        background-color: $color-caja;
+        border: $border;
+
+    }
+    p{
+        font-family: $fuente-parrafos;
+    }
+}
+
+#abuelo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    p{
+        font-size: 21px;
+        font-family: $fuente-parrafos;
+    }
+    .padre{
+        background-color: rgb(211, 69, 69);
+        .hijo{
+            text-transform: lowercase;
+            color: black;
+            font-size: $size-a;
+        }
+        &:nth-child(2){
+            background-color: $color-nav;
+        }
+    }
+}

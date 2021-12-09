@@ -1,0 +1,61 @@
+body {
+  background-color: green;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-size: 40px;
+}
+
+.topnav {
+  margin-top: 20px;
+  padding: 20px;
+  height: 40px;
+  background-color: black;
+  text-align: center;
+}
+.topnav a {
+  font-size: 21px;
+  padding: 20px 20px;
+  color: white;
+}
+.topnav a:hover {
+  font-size: 40px;
+}
+
+.miestilo h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+}
+.miestilo .caja {
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+  border: 2px solid red;
+}
+.miestilo p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#abuelo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#abuelo p {
+  font-size: 21px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#abuelo .padre {
+  background-color: #d34545;
+}
+#abuelo .padre .hijo {
+  text-transform: lowercase;
+  color: black;
+  font-size: 21px;
+}
+#abuelo .padre:nth-child(2) {
+  background-color: black;
+}
+
+/*# sourceMappingURL=estilos.css.map */
